@@ -256,7 +256,7 @@ $(document).ready(function () {
 
 // magnificPopup
 (function () {
-    var link = $('.js-popup-open');
+    const link = $('.js-popup-open');
     link.magnificPopup({
         type: 'inline',
         fixedContentPos: true,
@@ -264,6 +264,16 @@ $(document).ready(function () {
         callbacks: {
             beforeOpen: function beforeOpen() {
                 this.st.mainClass = this.st.el.attr('data-effect');
+            },
+            open: function() {
+                const el = $.magnificPopup.instance.st.el;
+                const planValue = el.attr('data-plan');
+                if (planValue) {
+                    $('#contact-form-plan').val(planValue);
+                }
+            },
+            close: function() {
+                $('#contact-form-plan').val("");
             }
         }
     });
@@ -297,4 +307,68 @@ var rellax = new Rellax('.js-rellax', {
     round: true,
     vertical: true,
     horizontal: false
+});
+
+// Contact Us
+$(document).ready(function () {
+    const contactFormName = $('#contact-form-name');
+    const contactFormEmail = $('#contact-form-email');
+    const contactFormMessage = $('#contact-form-message');
+    const contactFormPlan = $('#contact-form-plan');
+
+    function cleanContactUs() {
+        contactFormName.val('');
+        contactFormEmail.val('');
+        contactFormMessage.val('');
+        contactFormPlan.val('');
+    }
+
+    $("form.popup__form").on('submit', function (e) {
+        e.stopPropagation();
+        e.preventDefault();
+
+        let valid = true;
+
+        if (contactFormName.val() === "") {
+            contactFormName.addClass("field__warning");
+            valid = false;
+        }
+        if (contactFormEmail.val() === "") {
+            contactFormEmail.addClass("field__warning");
+            valid = false;
+        }
+        if (contactFormMessage.val() === "") {
+            contactFormMessage.addClass("field__warning");
+            valid = false;
+        }
+        if ($('#g-recaptcha-response').val() === "") {
+            valid = false;
+        }
+
+        if (valid) {
+            $.ajax({
+                url: 'https://icerockdev.com/mail.php?type=prototyping',
+                type: 'POST',
+                data: {
+                    name: contactFormName.val(),
+                    email: contactFormEmail.val(),
+                    message: contactFormMessage.val(),
+                    plan: contactFormPlan.val(),
+                    referrer: document.referrer,
+                    captcha: $('#g-recaptcha-response').val(),
+                },
+            })
+              .done(function (e) {
+                  cleanContactUs();
+                  $.magnificPopup.instance.close()
+              })
+              .fail(function (e) {
+                  alert("Error!");
+              })
+        }
+
+        $("form.popup__form input, form.popup__form textarea").on('focus', function (e) {
+            $(this).removeClass("field__warning");
+        });
+    });
 });

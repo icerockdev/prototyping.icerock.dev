@@ -28,14 +28,14 @@
     <link rel="stylesheet" media="all" href="css/app.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>var viewportmeta = document.querySelector('meta[name="viewport"]');
-    if (viewportmeta) {
-      if (screen.width < 375) {
-        var newScale = screen.width / 375;
-        viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
-      } else {
-        viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
-      }
-    }</script>
+if (viewportmeta) {
+  if (screen.width < 375) {
+    var newScale = screen.width / 375;
+    viewportmeta.content = 'width=375, minimum-scale=' + newScale + ', maximum-scale=1.0, user-scalable=no, initial-scale=' + newScale + '';
+  } else {
+    viewportmeta.content = 'width=device-width, maximum-scale=1.0, initial-scale=1.0';
+  }
+}</script>
   </head>
   <body>
     <div class="page">
@@ -43,23 +43,23 @@
         <div class="header js-header" id="header">
           <div class="header__center center"><button class="header__burger js-header-burger"><span></span></button><a class="header__logo" href="#"><img class="header__pic" src="img/logo.svg" alt=""></a>
             <div class="header__wrap js-header-wrap">
-              <nav class="header__nav"><a class="header__item" href="#">Features</a><a class="header__item" href="#">Pricing</a><a class="header__item" href="#">About&nbsp;</a>              </nav>
+              <nav class="header__nav"><a class="header__item" href="#">Фичи&nbsp;</a><a class="header__item" href="#">Отзывы&nbsp;</a><a class="header__item" href="#">Работы&nbsp;</a><a class="header__item" href="#">Цена</a><a class="header__item" href="#">О нас&nbsp;</a>              </nav>
               <div class="header__photo"><img class="header__pic" src="img/menu-pic.png" alt=""></div>
-            </div><a class="header__btn btn btn_pink js-popup-open" href="#popup-contact" data-effect="mfp-zoom-in">Get Started</a>
+            </div><a class="header__btn btn btn_pink js-popup-open" href="#popup-contact" data-effect="mfp-zoom-in">Заказать прототип&nbsp;</a>
           </div>
           <div class="header__bg js-header-bg"></div>
         </div>
         <div class="main__center center">
           <div class="main__wrap">
-            <h1 class="main__title title title_big" data-aos><span class="title__box"><span class="title__text">Prototypes</span></span><span class="title__box"><span class="title__text"><span class="title__line">That</span></span></span><span class="title__box"><span class="title__text">Feel Real<span class="title__color">.</span></span></span></h1>
-            <div class="main__info info" data-aos="animation-scale-y" data-aos-delay="400">The ability to see and touch your own application even before development starts</div>
-            <div class="main__control" data-aos="animation-scale-y" data-aos-delay="550"><a class="main__btn btn btn_purple js-popup-open" href="#popup-contact" data-effect="mfp-zoom-in">Get Started</a><a class="main__link"  href="#">
-                <div class="main__icon"><img class="main__pic" src="img/play.svg" alt=""></div>
-                <div class="main__text">See It In Action!</div>
+            <h1 class="main__title title title_big" data-aos><span class="title__box"><span class="title__text">Прототипы</span></span><span class="title__box"><span class="title__text"><span class="title__line">Как&nbsp;</span></span></span><span class="title__box"><span class="title__text">Реальные Продукты&nbsp;<span class="title__color">.</span></span></span></h1>
+            <div class="main__info info" data-aos="animation-scale-y" data-aos-delay="400">Возможность увидеть и потрогать собственное приложение еще до начала разработки</div>
+            <div class="main__control" data-aos="animation-scale-y" data-aos-delay="550"><a class="main__btn btn btn_purple js-popup-open" href="#popup-contact" data-effect="mfp-zoom-in">Заказать прототип</a><a class="main__link"  href="#">
+            <div class="main__icon"><img class="main__pic" src="img/play.svg" alt=""></div>
+                <div class="main__text">Посмотреть в действии</div>
               </a></div>
             <div class="main__scroll" data-aos="animation-scale-y" data-aos-delay="650"><a class="main__link" href="#">
                 <div class="main__icon"><img class="main__pic" src="img/scroll.svg" alt=""></div>
-                <div class="main__text">Scroll to explore</div>
+                <div class="main__text">Листай дальше</div>
               </a></div>
           </div>
           <div class="main__view" data-aos>
@@ -82,10 +82,10 @@
       <div class="features js-features">
         <div class="features__center center">
           <div class="features__head" data-aos="animation-scale-y">
-            <div class="features__stage stage">Features</div>
+            <div class="features__stage stage">Фичи</div>
             <div class="features__box">
-              <h2 class="features__title title">Prototype and its advantages</h2>
-              <div class="features__info info">The first step to realizing your business idea!</div>
+              <h2 class="features__title title">Прототип и его преимущества</h2>
+              <div class="features__info info">Первый шаг к реализации вашей бизнес-идеи!</div>
             </div>
           </div>
           <div class="features__body">
@@ -94,36 +94,36 @@
                 <div class="features__slide" data-aos="animation-scale-y">
                   <div class="features__details">
                     <div class="features__preview"><img class="features__pic" src="img/highfidelity.png" alt=""></div>
-                    <div class="features__category">High-fidelity</div>
-                    <div class="features__text">The prototype looks like a finished application. With this you can already do, for example, marketing</div><a class="features__link" href="#">Find out more</a>
+                    <div class="features__category">Высокая точность</div>
+                    <div class="features__text">Прототип выглядит как готовое приложение. С этим уже можно заниматься, например, маркетингом.</div>
                   </div>
                 </div>
                 <div class="features__slide" data-aos="animation-scale-y" data-aos-delay="200">
                   <div class="features__details">
                     <div class="features__preview"><img class="features__pic" src="img/idea.png" alt=""></div>
-                    <div class="features__category">Validation</div>
-                    <div class="features__text">The application prototype allows you to test a business idea for profitability at the present time.</div><a class="features__link" href="#">Find out more</a>
+                    <div class="features__category">Проверка</div>
+                    <div class="features__text">Прототип приложения позволяет протестировать бизнес-идею на рентабельность в настоящее время.</div>
                   </div>
                 </div>
                 <div class="features__slide">
                   <div class="features__details">
                     <div class="features__preview"><img class="features__pic" src="img/present.png" alt=""></div>
-                    <div class="features__category">Presentation</div>
-                    <div class="features__text">Does the start of a project require investments? Application prototype is the best presentation for an investor.</div><a class="features__link" href="#">Find out more</a>
+                    <div class="features__category">Презентация</div>
+                    <div class="features__text">Требуются ли инвестиции для старта проекта? Прототип приложения - лучшая презентация для инвестора.</div>
                   </div>
                 </div>
                 <div class="features__slide">
                   <div class="features__details">
                     <div class="features__preview"><img class="features__pic" src="img/testing.png" alt=""></div>
-                    <div class="features__category">Testing</div>
-                    <div class="features__text">The development money has not yet been spent, and testing for the focus group is already in full swing - perfect.</div><a class="features__link" href="#">Find out more</a>
+                    <div class="features__category">Тестирование</div>
+                    <div class="features__text">Деньги на разработку еще не потрачены, а тестирование для фокус-группы уже идет полным ходом - отлично.</div>
                   </div>
                 </div>
                 <div class="features__slide">
                   <div class="features__details">
                     <div class="features__preview"><img class="features__pic" src="img/develop.png" alt=""></div>
-                    <div class="features__category">Development start</div>
-                    <div class="features__text">Having a prototype on hand can save a lot of time and money when starting development.</div><a class="features__link" href="#">Find out more</a>
+                    <div class="features__category">Начало разработки</div>
+                    <div class="features__text">Наличие прототипа под рукой может сэкономить много времени и денег при запуске разработки.</div>
                   </div>
                 </div>
               </div>
@@ -135,15 +135,17 @@
         <div class="features__bg" data-aos data-aos-duration="1000"><img class="features__pic" src="img/features-pic-1.svg" alt=""></div>
       </div>
 
+
+
 		<div class="teams">
         <div class="teams__center center">
           <div class="teams__head" data-aos="animation-scale-y">
-            <div class="teams__stage stage">Reviews</div>
-            <h2 class="teams__title title">Helping teams design faster together<span class="title__color">.</span></h2>
+            <div class="teams__stage stage">Отзывы</div>
+            <h2 class="teams__title title">Помогаем командам работать вместе быстрее<span class="title__color">.</span></h2>
           </div>
           <div class="teams__body">
             <div class="teams__col" data-aos="animation-scale-y">
-              <h3 class="teams__title title title_sm">What others are&nbsp;saying</h3>
+              <h3 class="teams__title title title_sm">Что о нас&nbsp;говорят</h3>
             </div>
             <div class="teams__col">
               <div class="teams__container">
@@ -151,12 +153,12 @@
                   <div class="teams__slide" data-aos="animation-scale-y" data-aos-delay="200">
                     <div class="teams__line" style="background-color: #4E3EB8;"></div>
                     <div class="teams__name" style="color: #D761AD;">Leroy Merlin</div>
-                    <div class="teams__text">“ User testing highlights the prototype’s usability. Professional and flexible approach to work leads to top-quality results. ”</div>
+                    <div class="teams__text">“ Пользовательское тестирование подчеркивает удобство использования прототипа. Профессиональный и гибкий подход к работе приводит к качественному результату. ”</div>
                     <div class="teams__user">
                       <div class="teams__ava"><img class="teams__pic" src="img/leroy.png" alt=""></div>
                       <div class="teams__box">
-                        <div class="teams__man">Anna</div>
-                        <div class="teams__login">Director of Personnel @Leroy_Merlin</div>
+                        <div class="teams__man">Анна</div>
+                        <div class="teams__login">Директор по персоналу @Leroy_Merlin</div>
                       </div>
                     </div>
                   </div>
@@ -187,12 +189,12 @@
   				  <div class="teams__slide" data-aos="animation-scale-y" data-aos-delay="400">
                     <div class="teams__line" style="background-color: #D761AD;"></div>
                     <div class="teams__name" style="color: #4E3EB8;">RussiaRunning</div>
-                    <div class="teams__text">“ They maintained an open channel of communication and demonstrated responsibility and discipline at every stage. ”</div>
+                    <div class="teams__text">“ Они поддерживали открытый канал общения и демонстрировали ответственность и дисциплину на каждом этапе. ”</div>
                     <div class="teams__user">
                       <div class="teams__ava"><img class="teams__pic" src="img/russia running.png" alt=""></div>
                       <div class="teams__box">
-                        <div class="teams__man">Alexey</div>
-                        <div class="teams__login">Chief Analyst @russiarunning</div>
+                        <div class="teams__man">Алексей</div>
+                        <div class="teams__login">Главный аналитик @russiarunning</div>
                       </div>
                     </div>
                   </div>
@@ -212,11 +214,11 @@
             <div class="access__preview"><img class="access__pic js-parallax" data-scale="1.5" data-orientation="down" src="img/main-pic-2.png" alt=""></div>
           </div>
           <div class="access__wrap" data-aos="animation-scale-y">
-            <div class="access__info">Ready to get started?<br>Enter your mail and we will contact you</div>
+            <div class="access__info">Готовы начать?<br>Введите вашу почту и мы с вами свяжемся</div>
             <form class="access__form">
-              <div class="access__field"><input class="access__input" type="email" placeholder="Email address">
+              <div class="access__field"><input class="access__input" type="email" placeholder="Email">
                 <div class="access__icon"><img class="access__pic" src="img/sending-mail.svg" alt=""></div>
-              </div><button class="access__btn btn btn_purple" type="submit">Get Started</button>
+              </div><button class="access__btn btn btn_purple" type="submit">Заказать прототип</button>
             </form>
           </div>
         </div>
@@ -243,21 +245,21 @@
         <div class="layouts__center center">
           <div class="layouts__wrap">
             <div class="layouts__head" data-aos="animation-scale-y">
-              <div class="layouts__stage stage">Wide range of services</div>
-              <h2 class="layouts__title title">Responsive DNA<span class="title__color">.</span></h2>
+              <div class="layouts__stage stage">Широкий спектр услуг</div>
+              <h2 class="layouts__title title">ДНК Прототипа<span class="title__color">.</span></h2>
             </div>
             <div class="layouts__list">
               <div class="layouts__item" data-aos="animation-scale-y">
                 <div class="layouts__icon"><img class="layouts__pic" src="img/layout-1.svg" alt=""></div>
-                <div class="layouts__text">Analytics and product planning</div>
+                <div class="layouts__text">Аналитика и планирование продукта</div>
               </div>
               <div class="layouts__item" data-aos="animation-scale-y">
                 <div class="layouts__icon"><img class="layouts__pic" src="img/layout-3.svg" alt=""></div>
-                <div class="layouts__text">UI Design and product identity</div>
+                <div class="layouts__text">Дизайн пользовательского интерфейса и айдентика продукта</div>
               </div>
               <div class="layouts__item" data-aos="animation-scale-y">
                 <div class="layouts__icon"><img class="layouts__pic" src="img/layout-2.svg" alt=""></div>
-                <div class="layouts__text">UX Prototyping and testing</div>
+                <div class="layouts__text">UX прототипирование и тестирование</div>
               </div>
             </div>
           </div>
@@ -274,10 +276,10 @@
         <div class="showcase__center center">
           <div class="showcase__wrap">
             <div class="showcase__top" data-aos="animation-scale-y">
-              <div class="showcase__stage stage">Showcase</div>
-              <h2 class="showcase__title title">Created with ICEROCK<span class="title__color">.</span></h2>
+              <div class="showcase__stage stage">Наши работы</div>
+              <h2 class="showcase__title title">Создано в ICEROCK<span class="title__color">.</span></h2>
             </div>
-            <div class="showcase__btn" data-aos="animation-scale-y" data-aos-delay="300"><a href="https://www.behance.net/IceRock" target="_blank"><button class="btn btn_purple">View More Projects</button></a></div>
+            <div class="showcase__btn" data-aos="animation-scale-y" data-aos-delay="300"><a href="https://www.behance.net/IceRock" target="_blank"><button class="btn btn_purple">Посмотреть больше проектов</button></a></div>
           </div>
         </div>
         <div class="showcase__bg"><img class="showcase__pic" src="img/showcase-circle.svg" alt=""></div>
@@ -293,8 +295,8 @@
       <div class="plan js-plan">
         <div class="plan__center center">
           <div class="plan__head" data-aos="animation-scale-y">
-            <h2 class="plan__title title">Find the <span class="title__color">Right Plan.</span></h2>
-            <div class="plan__info info">Flexible pricing options for startups and your products.</div>
+            <h2 class="plan__title title">Выбери <span class="title__color">Свою Услугу.</span></h2>
+            <div class="plan__info info">Гибкие варианты ценообразования для стартапов и ваших продуктов.</div>
 
           </div>
           <div class="plan__body">
@@ -304,41 +306,41 @@
                 </svg></div>
               <div class="plan__category">
                 <div class="plan__icon"><img class="plan__pic" src="img/smile-1.svg" alt=""></div>
-                <div class="plan__text">Your design</div>
+                <div class="plan__text">Ваш дизайн</div>
               </div>
-              <h3 class="plan__title title title_sm">Individual</h3>
-              <div class="plan__price"><span class="plan__money">$34.99</span> /hour</div>
+              <h3 class="plan__title title title_sm">Инди</h3>
+              <div class="plan__price"><span class="plan__money">$34.99</span> /час</div>
               <ul class="plan__list">
-                <li>Suitable for demonstration to investors</li>
-                <li>UX audit of your design</li>
-                <li>Prototyping any cases</li>
-			  </ul><a class="plan__btn btn btn_white js-popup-open" href="#popup-contact" data-effect="mfp-zoom-in" data-plan="PLAN_INDIVIDUAL">Contact us</a>
+                <li>Подходит для демонстрации инвесторам</li>
+                <li>UX аудит вашего дизайна</li>
+                <li>Создание прототипов любых кейсов</li>
+			  </ul><a class="plan__btn btn btn_white js-popup-open" href="#popup-contact" data-effect="mfp-zoom-in">Связаться с нами</a>
             </div>
             <div class="plan__item js-plan-item" data-aos="animation-translate-y" data-aos-delay="200">
               <div class="plan__category">
                 <div class="plan__icon"><img class="plan__pic" src="img/smile-2.svg" alt=""></div>
-                <div class="plan__text">Our simple design</div>
+                <div class="plan__text">Наш простой дизайн</div>
               </div>
-              <h3 class="plan__title title title_sm">Standard</h3>
-              <div class="plan__price"><span class="plan__money">$24.99</span> /hour</div>
+              <h3 class="plan__title title title_sm">Стандарт</h3>
+              <div class="plan__price"><span class="plan__money">$24.99</span> /час</div>
               <ul class="plan__list">
-                <li>Suitable for testing your idea</li>
-                <li>High speed prototyping</li>
-                <li>Simple design based on platform guidelines<br>&nbsp;</li>
-              </ul><a class="plan__btn btn btn_pink js-popup-open" href="#popup-contact" data-effect="mfp-zoom-in" data-plan="PLAN_STANDARD">Contact us</a>
+                <li>Подходит для проверки вашей идеи</li>
+                <li>Высокоскоростное прототипирование</li>
+                <li>Простой дизайн, основанный на гайдах платформы</li>
+              </ul><a class="plan__btn btn btn_pink js-popup-open" href="#popup-contact" data-effect="mfp-zoom-in">Связаться с нами</a>
             </div>
             <div class="plan__item js-plan-item" data-aos="animation-translate-y" data-aos-delay="400">
               <div class="plan__category">
                 <div class="plan__icon"><img class="plan__pic" src="img/smile-2.svg" alt=""></div>
-                <div class="plan__text">Our cool design</div>
+                <div class="plan__text">Наш крутой дизайн</div>
               </div>
-              <h3 class="plan__title title title_sm">Ultimate</h3>
-              <div class="plan__price"><span class="plan__money">$49.99</span> /hour</div>
+              <h3 class="plan__title title title_sm">Про</h3>
+              <div class="plan__price"><span class="plan__money">$49.99</span> /час</div>
               <ul class="plan__list">
-                <li>Suitable for focus group testing</li>
-                <li>Development of design of any complexity</li>
-                <li>Premium productivity features.</li>
-              </ul><a class="plan__btn btn btn_purple js-popup-open" href="#popup-contact" data-effect="mfp-zoom-in" data-plan="PLAN_ULTIMATE">Contact us</a>
+                <li>Подходит для тестирования в фокус-группах</li>
+                <li>Разработка дизайна любой сложности</li>
+                <li>Прототипирование сложных и уникальных кейсов у которых нет аналогов</li>
+              </ul><a class="plan__btn btn btn_purple js-popup-open" href="#popup-contact" data-effect="mfp-zoom-in">Связаться с нами</a>
             </div>
           </div>
         </div>
@@ -350,22 +352,25 @@
           <div class="footer__row">
             <div class="footer__col"><a class="footer__logo" href="#"><img class="footer__pic" src="img/logo.svg" alt=""></a></div>
             <div class="footer__col js-footer-col">
-              <div class="footer__category js-footer-category">Company<svg class="icon icon-arrow-down">
+              <div class="footer__category js-footer-category">Компания
+                <svg class="icon icon-arrow-down">
                   <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                 </svg></div>
-              <div class="footer__menu js-footer-menu"><a class="footer__link" target="_blank" href="https://icerockdev.com/team/?">About us</a><a class="footer__link" target="_blank" href="https://icerockdev.com/vacancies/">Jobs</a><a class="footer__link" target="_blank" href="https://icerockdev.com/blog/ui-ux">Blog</a></div>
+              <div class="footer__menu js-footer-menu"><a class="footer__link" target="_blank" href="https://icerockdev.com/team/?">О нас</a><a class="footer__link" target="_blank" href="https://icerockdev.com/vacancies/">Вакансии</a><a class="footer__link" target="_blank" href="https://icerockdev.com/blog/ui-ux">Блог</a></div>
             </div>
             <div class="footer__col js-footer-col">
-              <div class="footer__category js-footer-category">Support<svg class="icon icon-arrow-down">
+              <div class="footer__category js-footer-category">Поддержка
+                <svg class="icon icon-arrow-down">
                   <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                 </svg></div>
-              <div class="footer__menu js-footer-menu"><a class="footer__link" target="_blank" href="#">Contact us</a><a class="footer__link" target="_blank" href="#">Cookies</a><a class="footer__link" target="_blank" href="#">Privacy & terms</a></div>
+              <div class="footer__menu js-footer-menu"><a class="footer__link" target="_blank" href="#">Связаться с нами</a><a class="footer__link" target="_blank" href="#">Cookies</a><a class="footer__link" target="_blank" href="#">Правовая информация</a></div>
             </div>
             <div class="footer__col js-footer-col">
-              <div class="footer__category js-footer-category">Community<svg class="icon icon-arrow-down">
+              <div class="footer__category js-footer-category">Сообщество
+                <svg class="icon icon-arrow-down">
                   <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
                 </svg></div>
-              <div class="footer__menu js-footer-menu"><a class="footer__link" target="_blank" href="https://t.me/kotlinmpp">Developers</a><a class="footer__link" target="_blank" href="https://t.me/protopie">Designers</a><a class="footer__link" target="_blank" href="https://icerockdev.com/">ICEROCK</a></div>
+              <div class="footer__menu js-footer-menu"><a class="footer__link" target="_blank" href="https://t.me/kotlinmpp">Разработчики</a><a class="footer__link" target="_blank" href="https://t.me/protopie">Дизайнеры</a><a class="footer__link" target="_blank" href="https://icerockdev.com/">ICEROCK</a></div>
             </div>
           </div>
         </div>
@@ -375,37 +380,38 @@
           <div class="popup__head"><a class="popup__logo" href="#"><img class="popup__pic" src="img/logo.svg"
                                                                         alt=""></a></div>
           <div class="popup__body">
-            <div class="popup__title title">Get in touch<span class="title__color">.</span></div>
-            <div class="popup__info">Enter your detail below</div>
+            <div class="popup__title title">Связаться<span class="title__color">.</span></div>
+            <div class="popup__info">Укажите ваши данные</div>
             <form class="popup__form">
               <div class="field__wrap_inline">
                 <div class="popup__field field">
-                  <div class="field__label">Name</div>
+                  <div class="field__label">Имя</div>
                   <div class="field__wrap">
                     <div class="field__icon"><img class="field__pic" src="img/user.svg" alt=""></div>
-                    <input class="field__input" id="contact-form-name" type="text" name="name" placeholder="Name">
+                    <input class="field__input" type="text" name="name" placeholder="Имя">
                   </div>
                 </div>
                 <div class="popup__field field">
                   <div class="field__label">Email</div>
                   <div class="field__wrap">
                     <div class="field__icon"><img class="field__pic" src="img/sending-mail.svg" alt=""></div>
-                    <input class="field__input" id="contact-form-email" type="email" name="email" placeholder="Email address">
+                    <input class="field__input" type="email" name="email" placeholder="Email">
                   </div>
                 </div>
               </div>
               <div class="popup__field field field_textarea">
-                <div class="field__label">Message</div>
+                <div class="field__label">Сообщение</div>
                 <div class="field__wrap">
                   <div class="field__icon"><img class="field__pic" src="img/message.svg" alt=""></div>
-                  <textarea class="field__textarea" id="contact-form-message" name="message" placeholder="Message"></textarea>
+                  <textarea class="field__textarea" name="Message" placeholder="Сообщение"></textarea>
                 </div>
+
               </div>
               <input id="contact-form-plan" type="hidden" name="plan"/>
               <div class="popup__field" style="text-align: center;">
                 <div class="g-recaptcha" data-sitekey="6LcdLHoUAAAAAETWOpJM-iVJ-b3prnvtYXmO4llR" style="display: inline-block; margin: 0 auto;"></div>
               </div>
-              <button class="popup__btn btn btn_purple" type="submit">Send now</button>
+              <button class="popup__btn btn btn_purple" type="submit">Отправить</button>
             </form>
             <div class="popup__circles">
               <div class="popup__circle"></div>
