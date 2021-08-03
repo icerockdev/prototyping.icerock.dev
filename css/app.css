@@ -2115,7 +2115,7 @@ body.no-scroll {
 .center {
   max-width: 1184px;
   margin: 0 auto;
-  padding: 0 72px;
+  padding: 0 72px 32px 72px;
 }
 
 .header {
@@ -3164,7 +3164,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   z-index: 4;
   display: inline-block;
   margin-right: -164px;
-  margin-bottom: 137px;
+  margin-bottom: 32px;
   font-size: 0;
 }
 
@@ -3399,7 +3399,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 .access__wrap {
   position: relative;
   z-index: 5;
-  max-width: 504px;
+  max-width: 504px;	
   margin: 0 auto;
 }
 
@@ -6408,7 +6408,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  border-top: 1px solid #E3E6E9;
+  border-top: 1px solid #ECF2F6;
 }
 
 .quality__col {
@@ -6422,13 +6422,13 @@ body:not(.touch-device) .header__item:hover .header__body {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   width: 50%;
-  height: 444px;
+  height: 300px;
   padding-top: 5px;
-  border-bottom: 1px solid #E3E6E9;
+  border-bottom: 1px solid #ECF2F6;
 }
 
 .quality__col:nth-child(2n+1) {
-  border-right: 1px solid #E3E6E9;
+  border-right: 1px solid #ECF2F6;
 }
 
 .quality__col:nth-child(2n+1) .quality__item {
@@ -6471,6 +6471,18 @@ body:not(.touch-device) .header__item:hover .header__body {
   left: -162px;
   width: 348px;
 }
+.quality__col:nth-child(5) .quality__icon {
+  top: 0;
+  left: -33px;
+  width: 202px;
+}
+
+.quality__col:nth-child(6) .quality__icon {
+  top: 0;
+  left: -33px;
+  width: 202px;
+}
+
 
 .quality__item {
   position: relative;
