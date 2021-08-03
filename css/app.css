@@ -6624,10 +6624,6 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .showcase__list {
   top: 454px;
-  left: 50%;
-  -webkit-transform: translateX(-35.6%) rotate(-30deg);
-  -ms-transform: translateX(-35.6%) rotate(-30deg);
-  transform: translateX(-35.6%) rotate(-30deg);
   z-index: 2;
 }
 
