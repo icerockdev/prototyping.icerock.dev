@@ -4564,7 +4564,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .speed__text {
-  max-width: 320px;
+  max-width: 370px;
 }
 
 .speed__number {
@@ -4577,7 +4577,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 .speed__number span {
   margin-right: 30px;
   font-family: 'Poppins', sans-serif;
-  font-size: 288px;
+  font-size: 148px;
   letter-spacing: -.05em;
   font-weight: 300;
 }
@@ -4690,7 +4690,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   left: calc(50% - 627px);
   width: 32px;
   height: 32px;
-  background: #6001D3;
+  background: #4E3EB8;
 }
 
 .speed__circle:nth-child(2) {
@@ -7969,7 +7969,7 @@ body:not(.touch-device) .header__item:hover .header__body {
     margin-bottom: 32px;
   }
   .speed__text {
-    max-width: 275px;
+    max-width: 370px;
   }
   .speed__preview {
     top: -90px;
