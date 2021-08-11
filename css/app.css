@@ -4604,6 +4604,59 @@ body:not(.touch-device) .header__item:hover .header__body {
   width: 408px;
 }
 
+.speed__graphic{
+  opacity: 0 !important;
+}
+
+.speed__plant{
+  z-index: 3;
+}
+
+.iframe_content{
+  position: relative;
+  z-index: 2;
+}
+
+.iframe_container{
+  position: absolute;
+  top: -36px;
+  right: calc(50% - 429px);
+  z-index: 99999999999;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 1px solid black;
+  height: 823px;
+  width: 420px;
+}
+@media screen and (max-width: 1200px) {
+  .iframe_container {   
+    top: -40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .iframe_container {   
+    top: -17px;
+    height: 662px;
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .iframe_container {   
+    right: calc(50% - 391px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .iframe_container {   
+    top: 629px;
+    right: calc(50% - 153px);
+    width: 310px;    
+    height: 568px;
+  }
+}
+
 .speed__preview:before {
   content: "";
   position: absolute;
