@@ -293,6 +293,32 @@ button {
   margin: 0 auto;
   text-align: left;
   z-index: 1045;
+  overflow: hidden ;
+  width: 80% ;
+  min-height: 100%;
+}
+
+.mfp-content iframe {
+  position: absolute ;
+  border: 0;
+  height: 100% ;
+  left: 0 ;  
+  top: 0 ;
+  width: 100%;
+}
+
+@media screen and (max-width: 65.9375em) {
+  .mfp-content {   
+    min-height:460px;
+    width: 90%;    
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .mfp-content {   
+    min-height:240px;
+    width: 100%;   
+  }
 }
 
 .mfp-inline-holder .mfp-content,
