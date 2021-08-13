@@ -24,6 +24,7 @@ if (isTouchDevice()) {
 (function () {
     var header = $('.js-header'),
         burger = header.find('.js-header-burger'),
+        item = header.find('.header__item')
         wrap = header.find('.js-header-wrap'),
         bg = header.find('.js-header-bg'),
         items = header.find('.js-header-item'),
@@ -37,6 +38,11 @@ if (isTouchDevice()) {
 
     // header menu mobile
     burger.on('click', function () {
+        burger.toggleClass('active');
+        wrap.toggleClass('visible');
+        bg.toggleClass('show');
+    });
+    item.on('click', function () {
         burger.toggleClass('active');
         wrap.toggleClass('visible');
         bg.toggleClass('show');
