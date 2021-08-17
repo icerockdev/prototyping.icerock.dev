@@ -300,6 +300,13 @@ button {
 }
 
 .mfp-content iframe {
+  border: 0;
+  left: 0 ;  
+  top: 0 ;
+  width: 100%;
+}
+
+.mfp-content .popupy {
   position: absolute ;
   border: 0;
   height: 100% ;
