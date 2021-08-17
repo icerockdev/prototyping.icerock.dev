@@ -4023,6 +4023,14 @@ body:not(.touch-device) .header__item:hover .header__body {
   color: #fff;
 }
 
+.plan__item:first-child .plan__title {
+  color: #fff;
+}
+
+.plan__item:first-child .plan__text {
+  color: #fff;
+}
+
 .plan__item:first-child .plan__list li {
   color: #fff;
 }
