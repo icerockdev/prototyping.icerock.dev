@@ -11,11 +11,13 @@ output, ruby, section, summary, time, mark, audio, video {
   padding: 0;
   border: 0;
   vertical-align: baseline;
+  color: #292930;
 }
 
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 img, fieldset, a img {
@@ -292,6 +294,32 @@ button {
   margin: 0 auto;
   text-align: left;
   z-index: 1045;
+  overflow: hidden ;
+  width: 80% ;
+  min-height: 100%;
+}
+
+.mfp-content iframe {
+  position: absolute ;
+  border: 0;
+  height: 100% ;
+  left: 0 ;  
+  top: 0 ;
+  width: 100%;
+}
+
+@media screen and (max-width: 65.9375em) {
+  .mfp-content {   
+    min-height:460px;
+    width: 90%;    
+  }
+}
+
+@media screen and (max-width: 39.9375em) {
+  .mfp-content {   
+    min-height:240px;
+    width: 100%;   
+  }
 }
 
 .mfp-inline-holder .mfp-content,
@@ -4602,6 +4630,59 @@ body:not(.touch-device) .header__item:hover .header__body {
   top: -25px;
   right: calc(50% - 429px);
   width: 408px;
+}
+
+.speed__graphic{
+  opacity: 0 !important;
+}
+
+.speed__plant{
+  z-index: 3;
+}
+
+.iframe_content{
+  position: relative;
+  z-index: 2;
+}
+
+.iframe_container{
+  position: absolute;
+  top: -36px;
+  right: calc(50% - 429px);
+  z-index: 99999999999;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 1px solid black;
+  height: 823px;
+  width: 420px;
+}
+@media screen and (max-width: 1200px) {
+  .iframe_container {   
+    top: -40px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .iframe_container {   
+    top: -17px;
+    height: 662px;
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .iframe_container {   
+    right: calc(50% - 391px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .iframe_container {   
+    top: 629px;
+    right: calc(50% - 153px);
+    width: 310px;    
+    height: 568px;
+  }
 }
 
 .speed__preview:before {
