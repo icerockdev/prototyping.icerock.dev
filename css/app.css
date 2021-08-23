@@ -2273,6 +2273,12 @@ body.no-scroll {
   margin-right: 57px;
 }
 
+@media screen and (max-width: 800px) {
+  .header__item:not(:last-child) {
+    margin-right: 49px;
+  }
+}
+
 .header__item[href], .header__head {
   position: relative;
   padding: 8px 0;
