@@ -263,6 +263,7 @@ $(document).ready(function () {
 // magnificPopup
 (function () {
     const link = $('.js-popup-open');
+    ym(84221812,'reachGoal','Посмотреть в действии')
     link.magnificPopup({
         type: 'inline',
         fixedContentPos: true,
@@ -350,7 +351,7 @@ $(document).ready(function () {
         if ($('#g-recaptcha-response').val() === "") {
             valid = false;
         }
-
+        
         if (valid) {
             $.ajax({
                 url: 'https://icerockdev.com/mail.php?type=prototyping',
@@ -367,6 +368,7 @@ $(document).ready(function () {
               .done(function (e) {
                   cleanContactUs();
                   $.magnificPopup.instance.close()
+                  ym(84221812,'reachGoal','Отправка заявки')
               })
               .fail(function (e) {
                   alert("Error!");

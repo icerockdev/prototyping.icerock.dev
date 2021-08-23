@@ -4023,6 +4023,14 @@ body:not(.touch-device) .header__item:hover .header__body {
   color: #fff;
 }
 
+.plan__item:first-child .plan__title {
+  color: #fff;
+}
+
+.plan__item:first-child .plan__text {
+  color: #fff;
+}
+
 .plan__item:first-child .plan__list li {
   color: #fff;
 }
@@ -4039,6 +4047,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .plan__item:nth-child(3) {
   border: 1px solid #E3E6E9;
+  background: white;
 }
 
 .plan__item:not(:first-child) {
