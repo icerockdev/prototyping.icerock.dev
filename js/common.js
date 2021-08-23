@@ -43,9 +43,9 @@ if (isTouchDevice()) {
         bg.toggleClass('show');
     });
     item.on('click', function () {
-        burger.toggleClass('active');
-        wrap.toggleClass('visible');
-        bg.toggleClass('show');
+        burger.removeClass('active');
+        wrap.removeClass('visible');
+        bg.removeClass('show');
     });
     bg.on('click', function () {
         burger.removeClass('active');
