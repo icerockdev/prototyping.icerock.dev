@@ -4692,7 +4692,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .iframe_container {   
     top: 629px;
     right: calc(50% - 153px);
