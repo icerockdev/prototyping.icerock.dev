@@ -172,6 +172,17 @@ $(document).ready(function () {
         }]
     });
 
+     // plan slider
+     $('.plan__body_mobile').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        prevArrow: false,
+        nextArrow: false,
+    });
+
+    
     // package
     (function () {
         var packages = $('.js-package'),
