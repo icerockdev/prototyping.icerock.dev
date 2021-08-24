@@ -43,9 +43,9 @@ if (isTouchDevice()) {
         bg.toggleClass('show');
     });
     item.on('click', function () {
-        burger.toggleClass('active');
-        wrap.toggleClass('visible');
-        bg.toggleClass('show');
+        burger.removeClass('active');
+        wrap.removeClass('visible');
+        bg.removeClass('show');
     });
     bg.on('click', function () {
         burger.removeClass('active');
@@ -172,6 +172,17 @@ $(document).ready(function () {
         }]
     });
 
+     // plan slider
+     $('.plan__body_mobile').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        prevArrow: false,
+        nextArrow: false,
+    });
+
+    
     // package
     (function () {
         var packages = $('.js-package'),
