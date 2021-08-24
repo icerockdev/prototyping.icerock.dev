@@ -4089,7 +4089,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   background-image: url("../img/list-icon-1.svg");
 }
 
-.plan__body .plan__body .plan__body .plan__item:nth-child(2) {
+.plan__body .plan__item:nth-child(2) {
   background: #fff;
   -webkit-box-shadow: 0 20px 40px rgba(41, 41, 48, 0.05);
   box-shadow: 0 20px 40px rgba(41, 41, 48, 0.05);
