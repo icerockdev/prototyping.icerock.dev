@@ -3,6 +3,14 @@
     svg4everybody();
 })();
 
+$('.header__item').click(function () {
+    const hrefElement = this.href.split('#')[1];
+    const linkBlock =  document.querySelector(`a[name=${hrefElement}]`)
+    let scroll = linkBlock.getBoundingClientRect();
+    $("html, body").animate({ scrollTop: scroll.top }, "slow");
+})
+
+
 // check if touch device
 function isTouchDevice() {
     var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
