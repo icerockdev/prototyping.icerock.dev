@@ -4000,7 +4000,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .plan__body_mobile{
   display: none;
-  max-height: 532px;
+  max-height: 588px;
 }
 
 .plan__item {
@@ -4032,7 +4032,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   max-height: 532px;
   display: flex;
   flex-direction: column;
-  margin: 0 5px;
+  margin: 21px 30px;
   padding: 0 -5px;
 }
 
@@ -8492,8 +8492,8 @@ body:not(.touch-device) .header__item:hover .header__body {
   }
   .plan__body_mobile{
     display: flex;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 430px;
+    margin: 10px auto;
   }
   .plan__item {
     width: 100%;
