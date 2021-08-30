@@ -17,7 +17,6 @@ output, ruby, section, summary, time, mark, audio, video {
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
 }
 
 img, fieldset, a img {
@@ -4000,7 +3999,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 
 .plan__body_mobile{
   display: none;
-  max-height: 532px;
+  max-height: 588px;
 }
 
 .plan__item {
@@ -4032,7 +4031,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   max-height: 532px;
   display: flex;
   flex-direction: column;
-  margin: 0 5px;
+  margin: 21px 30px;
   padding: 0 -5px;
 }
 
@@ -4089,7 +4088,7 @@ body:not(.touch-device) .header__item:hover .header__body {
   background-image: url("../img/list-icon-1.svg");
 }
 
-.plan__body .plan__body .plan__body .plan__item:nth-child(2) {
+.plan__body .plan__item:nth-child(2) {
   background: #fff;
   -webkit-box-shadow: 0 20px 40px rgba(41, 41, 48, 0.05);
   box-shadow: 0 20px 40px rgba(41, 41, 48, 0.05);
@@ -8492,8 +8491,8 @@ body:not(.touch-device) .header__item:hover .header__body {
   }
   .plan__body_mobile{
     display: flex;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 430px;
+    margin: 10px auto;
   }
   .plan__item {
     width: 100%;
