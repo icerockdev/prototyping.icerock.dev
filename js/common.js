@@ -283,6 +283,7 @@ $(document).ready(function () {
 (function () {
     const link = $('.js-popup-open');
     ym(84221812,'reachGoal','Посмотреть в действии')
+    gtag("event", "select_content", {});
     link.magnificPopup({
         type: 'inline',
         fixedContentPos: true,
@@ -388,6 +389,10 @@ $(document).ready(function () {
                   cleanContactUs();
                   $.magnificPopup.instance.close()
                   ym(84221812,'reachGoal','Отправка заявки')
+                  gtag("event", "generate_lead", {
+                    currency: "RU",
+                    value: 0
+                  });
               })
               .fail(function (e) {
                   alert("Error!");
