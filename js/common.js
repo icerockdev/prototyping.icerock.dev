@@ -381,7 +381,7 @@ $(document).ready(function () {
                 type: 'POST',
                 data: {
                     name: contactFormName.val(),
-                    email: contactFormPhone.val(),
+                    phone: contactFormPhone.val(),
                     message: contactFormMessage.val(),
                     plan: contactFormPlan.val(),
                     referrer: document.referrer,
