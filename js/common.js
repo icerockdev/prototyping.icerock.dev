@@ -339,15 +339,17 @@ var rellax = new Rellax('.js-rellax', {
 // Contact Us
 $(document).ready(function () {
     const contactFormName = $('#contact-form-name');
-    const contactFormEmail = $('#contact-form-email');
+    const contactFormPhone = $('#contact-form-tel');
     const contactFormMessage = $('#contact-form-message');
     const contactFormPlan = $('#contact-form-plan');
+    const captha = $('#g-recaptcha-response');
 
     function cleanContactUs() {
         contactFormName.val('');
         contactFormEmail.val('');
         contactFormMessage.val('');
         contactFormPlan.val('');
+        captha.val('')
     }
 
     $("form.popup__form").on('submit', function (e) {
@@ -360,29 +362,30 @@ $(document).ready(function () {
             contactFormName.addClass("field__warning");
             valid = false;
         }
-        if (contactFormEmail.val() === "") {
-            contactFormEmail.addClass("field__warning");
+        if (contactFormPhone.val() === "") {
+            contactFormPhone.addClass("field__warning");
             valid = false;
         }
         if (contactFormMessage.val() === "") {
             contactFormMessage.addClass("field__warning");
             valid = false;
         }
-        if ($('#g-recaptcha-response').val() === "") {
+        if (captha.val() === "") {
             valid = false;
         }
         
         if (valid) {
+            $(".popup__btn")[0].disabled = true
             $.ajax({
-                url: 'https://icerockdev.com/mail.php?type=prototyping',
+                url: 'https://dev.corp.icerock.dev/mail.php?type=prototyping',
                 type: 'POST',
                 data: {
                     name: contactFormName.val(),
-                    email: contactFormEmail.val(),
+                    phone: contactFormPhone.val(),
                     message: contactFormMessage.val(),
                     plan: contactFormPlan.val(),
                     referrer: document.referrer,
-                    captcha: $('#g-recaptcha-response').val(),
+                    captcha: captha.val(),
                 },
             })
               .done(function (e) {
