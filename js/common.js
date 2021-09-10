@@ -370,14 +370,14 @@ $(document).ready(function () {
             contactFormMessage.addClass("field__warning");
             valid = false;
         }
-        if (captha.val() === "") {
+        if (!captha.val()) {
             valid = false;
         }
         
         if (valid) {
             $(".popup__btn")[0].disabled = true
             $.ajax({
-                url: 'https://dev.corp.icerock.dev/mail.php?type=prototyping',
+                url: 'https://icerockdev.com/mail.php?type=prototyping',
                 type: 'POST',
                 data: {
                     name: contactFormName.val(),
