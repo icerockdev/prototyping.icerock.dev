@@ -342,14 +342,13 @@ $(document).ready(function () {
     const contactFormPhone = $('#contact-form-tel');
     const contactFormMessage = $('#contact-form-message');
     const contactFormPlan = $('#contact-form-plan');
-    const captha = $('#g-recaptcha-response');
 
     function cleanContactUs() {
         contactFormName.val('');
         contactFormPhone.val('');
         contactFormMessage.val('');
         contactFormPlan.val('');
-        captha.val('')
+        $('#g-recaptcha-response').val('')
     }
 
     $("form.popup__form").on('submit', function (e) {
@@ -370,7 +369,7 @@ $(document).ready(function () {
             contactFormMessage.addClass("field__warning");
             valid = false;
         }
-        if (!captha.val()) {
+        if (!$('#g-recaptcha-response').val()) {
             valid = false;
         }
         
@@ -385,17 +384,17 @@ $(document).ready(function () {
                     message: contactFormMessage.val(),
                     plan: contactFormPlan.val(),
                     referrer: document.referrer,
-                    captcha: captha.val(),
+                    captcha: $('#g-recaptcha-response').val(),
                 },
             })
               .done(function (e) {
-                  cleanContactUs();
                   $.magnificPopup.instance.close()
                   ym(84221812,'reachGoal','Отправка заявки')
                   gtag("event", "generate_lead", {
                     currency: "RU",
                     value: 0
                   });
+                  cleanContactUs();
               })
               .fail(function (e) {
                   alert("Error!");
