@@ -346,7 +346,7 @@ $(document).ready(function () {
 
     function cleanContactUs() {
         contactFormName.val('');
-        contactFormEmail.val('');
+        contactFormPhone.val('');
         contactFormMessage.val('');
         contactFormPlan.val('');
         captha.val('')
