@@ -4571,6 +4571,25 @@ body:not(.touch-device) .header__item:hover .header__body {
   color: #292930;
 }
 
+.teams__text_ru{
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .teams__text_ru{
+    margin-top: -13px;
+  }
+}
+
+.teams__text_ru_strong strong{
+  font-size: 50px;
+  margin-right: 6px;
+}
+
+.teams__text_ru_text{
+  margin-top: 11px;
+}
+
 .teams__user {
   display: -webkit-box;
   display: -ms-flexbox;
