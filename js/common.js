@@ -388,6 +388,7 @@ $(document).ready(function () {
                 },
             })
               .done(function (e) {
+                  $(".popup__btn")[0].disabled = false
                   $.magnificPopup.instance.close()
                   ym(84221812,'reachGoal','Отправка заявки')
                   gtag("event", "generate_lead", {
@@ -397,6 +398,7 @@ $(document).ready(function () {
                   cleanContactUs();
               })
               .fail(function (e) {
+                  $(".popup__btn")[0].disabled = false
                   alert("Error!");
               })
         }
