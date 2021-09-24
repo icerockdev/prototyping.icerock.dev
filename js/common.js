@@ -374,7 +374,7 @@ $(document).ready(function () {
         }
         
         if (valid) {
-            $(".popup__btn")[0].disabled = true
+            $(".popup__btn").attr('disabled', true)
             $.ajax({
                 url: 'https://icerockdev.com/mail.php?type=prototyping',
                 type: 'POST',
@@ -388,6 +388,7 @@ $(document).ready(function () {
                 },
             })
               .done(function (e) {
+                  $(".popup__btn").attr('disabled', false)
                   $.magnificPopup.instance.close()
                   ym(84221812,'reachGoal','Отправка заявки')
                   gtag("event", "generate_lead", {
@@ -397,6 +398,7 @@ $(document).ready(function () {
                   cleanContactUs();
               })
               .fail(function (e) {
+                  $(".popup__btn").attr('disabled', false)
                   alert("Error!");
               })
         }
