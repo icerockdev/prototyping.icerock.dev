@@ -1,0 +1,5 @@
+# Ignore results from test and build directories
+ignoreFiles = """
+ru/js/
+js/
+"""

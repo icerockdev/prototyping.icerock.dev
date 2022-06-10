@@ -4530,7 +4530,7 @@ body:not(.touch-device) .header__item:hover .header__body {
 }
 
 .teams__body .teams__title {
-  max-width: 285px;
+  max-width: 230px;
 }
 
 .teams__container {
