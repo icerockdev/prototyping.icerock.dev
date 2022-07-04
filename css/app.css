@@ -4701,6 +4701,10 @@ body:not(.touch-device) .header__item:hover .header__body {
   font-weight: 300;
 }
 
+.speed_ru_number {
+  font-size: 100px !important;
+}
+
 .speed__line, .speed__preview, .speed__circle, .speed__plant {
   position: absolute;
   font-size: 0;
@@ -9514,6 +9518,9 @@ body:not(.touch-device) .header__item:hover .header__body {
   }
   .speed__number span {
     font-size: 275px;
+  }
+  .speed_ru_number {
+    font-size: 64px !important;
   }
   .speed__line {
     top: auto;
