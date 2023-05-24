@@ -9517,7 +9517,7 @@ body:not(.touch-device) .header__item:hover .header__body {
     margin-left: -10px;
   }
   .speed__number span {
-    font-size: 275px;
+    font-size: 124px;
   }
   .speed_ru_number {
     font-size: 64px !important;
